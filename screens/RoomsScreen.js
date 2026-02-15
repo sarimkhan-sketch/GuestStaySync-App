@@ -70,7 +70,7 @@ const RoomsScreen = () => {
               >
                 {route.params.oldPrice}
               </Text>
-              <Text style={{ fontSize: 18 }}>Tk {route.params.newPrice}</Text>
+              <Text style={{ fontSize: 18 }}>Rs {route.params.newPrice}</Text>
             </View>
             <Amenities />
 

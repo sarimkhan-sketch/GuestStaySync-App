@@ -143,7 +143,7 @@ const UserScreen = () => {
               {route.params.oldPrice * route.params.adults}
             </Text>
             <Text style={{ fontSize: 20 }}>
-              Tk {route.params.newPrice * route.params.adults}
+              Rs {route.params.newPrice * route.params.adults}
             </Text>
           </View>
           <Text>
