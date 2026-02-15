@@ -13,6 +13,7 @@ const firebaseConfig = {
 };
 
 console.log("Firebase Key:", process.env.EXPO_PUBLIC_FIREBASE_API_KEY ? "LOADED ✅" : "MISSING ❌");
+console.log(" it is ", process.env.EXPO_PUBLIC_FIREBASE_API_KEY);
 
 const app = initializeApp(firebaseConfig);
 
