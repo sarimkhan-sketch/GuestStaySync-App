@@ -131,7 +131,7 @@ const BookingScreen = () => {
                     fontWeight: "400",
                   }}
                 >
-                  Cost: {item.bookingDetails.newPrice} BDT
+                  Cost: {item.bookingDetails.newPrice} INR
                 </Text>
               </View>
             </View>

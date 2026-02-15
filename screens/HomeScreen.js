@@ -25,7 +25,10 @@ import { ModalContent } from "react-native-modals";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
-  const [selectedDates, setSelectedDates] = useState();
+  const [selectedDates, setSelectedDates] = useState({
+        startDate: "2026/06/15",
+        endDate: "2026/06/20"
+  });
   const route = useRoute();
   const [rooms, setRooms] = useState(1);
   const [adults, setAdults] = useState(2);
@@ -190,8 +193,10 @@ const HomeScreen = () => {
                   setSelectedDates(startDate, endDate)
                 }
                 allowFontScaling={false}
-                placeholder={"Select Your Dates"}
+                placeholder={"2026/06/15 - 2026/06/20"}
                 mode={"range"}
+                startDate={selectedDates.startDate}
+                endDate={selectedDates.endDate}
               />
             </Pressable>
 

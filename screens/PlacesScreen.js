@@ -56,7 +56,7 @@ const PlacesScreen = () => {
     setLoading(true);
 
     const fetchProducts = async () => {
-      const colRef = collection(db, "places");
+      const colRef = collection(db, "Rooms");
       const docsSnap = await getDocs(colRef);
       const newItems = [];
       docsSnap.forEach((doc) => {

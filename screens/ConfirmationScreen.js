@@ -93,7 +93,10 @@ const ConfirmationScreen = () => {
       }
     );
     ToastAndroid.show("Booking Confirmed!", ToastAndroid.SHORT);
-    navigation.navigate("Bookings");
+    //navigation.navigate("Bookings");
+    navigation.navigate("Main", {
+      screen: "Bookings",
+    }); // ✅ Navigator goes to 'Main' tab bar, then switches to 'Bookings' tab
   };
   return (
     <View>
@@ -230,7 +233,7 @@ const ConfirmationScreen = () => {
                       Check Out: {route.params.endDate}
                     </Text>
                     <Text style={styles.text}>
-                      Amount: BDT {route.params.newPrice}
+                      Amount: INR {route.params.newPrice}
                     </Text>
                   </View>
 
@@ -303,7 +306,7 @@ const ConfirmationScreen = () => {
                       Check Out: {route.params.endDate}
                     </Text>
                     <Text style={styles.text}>
-                      Amount: BDT {route.params.newPrice}
+                      Amount: INR {route.params.newPrice}
                     </Text>
                   </View>
 
@@ -371,7 +374,7 @@ const ConfirmationScreen = () => {
                       Check Out: {route.params.endDate}
                     </Text>
                     <Text style={styles.text}>
-                      Amount: BDT {route.params.newPrice}
+                      Amount: INR {route.params.newPrice}
                     </Text>
                   </View>
 

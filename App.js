@@ -16,6 +16,14 @@ import {
 import { useEffect } from 'react';
 import { uploadData } from './seed'; // If you made it a function
 
+import { BackHandler } from 'react-native';
+
+if (typeof BackHandler.removeEventListener !== 'function') {
+  BackHandler.removeEventListener = (eventName, handler) => {
+    // This empty function prevents the 'is not a function' crash
+    return;
+  };
+}
 
 export default function App() {
   useEffect(() => {

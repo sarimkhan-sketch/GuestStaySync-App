@@ -7,7 +7,7 @@ import {
   Pressable,
   Image,
 } from "react-native";
-import React, { useLayoutEffect } from "react";
+import React, { Fragment, useLayoutEffect } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { pixelNormalize } from "../components/Normalise";
 import { MaterialIcons } from "@expo/vector-icons";
