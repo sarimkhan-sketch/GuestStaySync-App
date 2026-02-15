@@ -13,8 +13,16 @@ import {
   REACT_APP_APP_ID,
 } from "@env";
 
+import { useEffect } from 'react';
+import { uploadData } from './seed'; // If you made it a function
+
 
 export default function App() {
+  useEffect(() => {
+    // Uncomment the line below to run the upload ONCE, then comment it back out
+     // uploadData(); 
+  }, []);
+
   return (
     <>
       <Provider store={store}>

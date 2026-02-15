@@ -22,14 +22,14 @@ The application consists of several screens, each serving a unique purpose:
 ## Technologies 
 - **React Native**: A JavaScript framework for building mobile applications.
 - **Firebase**: Firebase Firestore and authentication services.
-- **Expo**: Expo CLI (SDK 49,50) for developing and building React Native applications.
+- **Expo**: Expo CLI (SDK 54) for developing and building React Native applications.
 
 ## How to setup
 1. Clone the repository: 
 2. Navigate to the project directory
-3. Install the dependencies: `npm install`
+3. Install the dependencies: `npm install` or `npm install --legacy-peer-deps`
 
 ## Usage
 1. Start the server: `npm start` or `npx expo start`
-2. Open your preferred mobile emulator or scan the QR code with the Expo Go app on your mobile device (make sure you have the Expo Go app installed with SDK 49, 50).
+2. Install the Expo Go app from app store and open it by scanning the QR code.
 
