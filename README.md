@@ -1,5 +1,7 @@
 # GuestStaySync App
 
+A demo on my iphone is also recorded in case the live demo isnt working during presentation.
+
 ## Summary
 This project is a Hotel Booking application developed in React Native with Firebase. It provides a seamless user experience for booking accommodations.
 
